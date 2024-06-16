@@ -17,7 +17,7 @@ export default function Header() {
 
         {/* Contact Me Button */}
         <Link href="/contact">
-          <button className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full transition duration-300">
+          <button className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full">
             Contact Me
           </button>
         </Link>
@@ -28,10 +28,7 @@ export default function Header() {
 
 function NavLink({ href, children }) {
   return (
-    <Link
-      href={href}
-      className="text-gray-300 hover:text-white transition duration-300"
-    >
+    <Link href={href} className="text-gray-300 hover:text-white">
       {children}
     </Link>
   );
