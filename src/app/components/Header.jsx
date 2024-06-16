@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-black py-4">
+    <header className="py-4">
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
         <div className="text-white text-2xl font-bold">DAMIEN</div>

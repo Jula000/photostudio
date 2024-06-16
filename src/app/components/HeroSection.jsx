@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <section className="bg-cover bg-center h-screen bg-black">
+    <section className="h-screen">
       <div className="inset-0 bg-opacity-60"></div>
       <div className="container mx-auto flex flex-col items-center justify-center h-full px-6 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">Capture Moments</h1>
