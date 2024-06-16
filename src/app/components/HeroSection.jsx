@@ -11,7 +11,7 @@ function HeroSection() {
         </p>
         <a
           href="#contact"
-          className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-full text-lg transition duration-300"
+          className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-full text-lg"
         >
           Book Now
         </a>
