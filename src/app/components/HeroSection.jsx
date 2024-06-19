@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import imgBg from "../../../public/hero-bg.png";
 
-export default function HeroComp() {
+export default function HeroSection() {
   return (
     <div className="relative bg-black text-white h-[400px] flex items-center justify-between px-10 py-5">
       <div className="flex flex-col justify-center z-10">
