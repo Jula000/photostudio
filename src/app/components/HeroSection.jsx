@@ -1,23 +1,44 @@
 import React from "react";
+import Image from "next/image";
+import image from "../../../public/hero-comp.png";
 
-function HeroSection() {
+export default function HeroComp() {
   return (
-    <section className="h-screen">
-      <div className="inset-0 bg-opacity-60"></div>
-      <div className="container mx-auto flex flex-col items-center justify-center h-full px-6 text-center text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">Capture Moments</h1>
-        <p className="text-lg md:text-xl mb-12">
-          Professional photography services to preserve your precious moments.
-        </p>
-        <a
-          href="#contact"
-          className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-full text-lg"
-        >
-          Book Now
-        </a>
+    <div className="relative bg-black text-white h-[400px] flex items-center justify-between px-10 py-5">
+      <div className="flex flex-col justify-center z-10">
+        <span className="text-sm uppercase tracking-widest">
+          Stunning Photography By
+        </span>
+        <h1 className="text-4xl md:text-6xl font-bold">Damien Braun</h1>
       </div>
-    </section>
+      <div className="flex flex-col items-center justify-center">
+        <button className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-full flex items-center">
+          Let's Work Together
+          <svg
+            className="w-4 h-4 ml-2"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
+          </svg>
+        </button>
+      </div>
+      <div className="absolute inset-0 z-0 flex justify-center items-center">
+        <Image
+          src={image}
+          width={346}
+          height={346}
+          alt="Header background"
+          className="h-[346px]"
+        />
+      </div>
+    </div>
   );
 }
-
-export default HeroSection;
