@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "../../../public/image.png";
+import image from "../../../public/photo-grid.png";
 
 export default function PhotoGrid() {
   return (
@@ -12,7 +12,6 @@ export default function PhotoGrid() {
           alt="Combined Photography"
         />
       </div>
-      <div> Hello</div>
     </main>
   );
 }

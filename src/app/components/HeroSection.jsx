@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import image from "../../../public/hero-comp.png";
+import imgBg from "../../../public/hero-bg.png";
 
 export default function HeroComp() {
   return (
@@ -32,7 +32,7 @@ export default function HeroComp() {
       </div>
       <div className="absolute inset-0 z-0 flex justify-center items-center">
         <Image
-          src={image}
+          src={imgBg}
           width={346}
           height={346}
           alt="Header background"

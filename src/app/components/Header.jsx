@@ -20,7 +20,7 @@ export default function Header() {
 
         {/* Contact Me Button */}
         <Link href="/contact">
-          <button className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full transition duration-300">
+          <button className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full transition">
             Contact Me
           </button>
         </Link>
