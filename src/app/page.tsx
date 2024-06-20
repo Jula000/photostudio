@@ -6,7 +6,7 @@ import About from "./components/AboutPage.jsx";
 
 export default function Home() {
   return (
-    <main className={`flex min-h-screen flex-col bg-main-color`}>
+    <main className="flex min-h-screen flex-col bg-main-color">
       <Header />
       <HeroSection />
       <PhotoGrid />

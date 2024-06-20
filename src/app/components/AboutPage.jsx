@@ -1,15 +1,14 @@
 import Image from "next/image";
-import kytsya from "../../../public/kytsya.jpg";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center">
       <div className="max-w-4xl mx-auto p-6 space-y-6">
         <h1 className="text-4xl font-bold">I AM DAMIEN</h1>
-        <div className=" flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
-          <div className=" w-full md:w-1/2 h-80">
+        <div className="relative flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
+          <div className="relative w-full md:w-1/2 h-80">
             <Image
-              src={kytsya}
+              src="/kytsya.jpg"
               alt="Damien"
               layout="fill"
               objectFit="cover"
