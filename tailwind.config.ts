@@ -1,9 +1,6 @@
 import { Manrope } from "next/font/google";
 import defaultTheme from "tailwindcss/defaultTheme";
-import { Manrope } from "next/font/google";
-import defaultTheme from "tailwindcss/defaultTheme";
 
-const config = {
 const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -30,6 +27,5 @@ const config = {
   },
   plugins: [],
 };
-
 
 export default config;
