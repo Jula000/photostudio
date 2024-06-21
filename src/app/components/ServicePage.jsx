@@ -1,20 +1,12 @@
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft, FaExternalLinkAlt } from "react-icons/fa";
-
-const Button = ({ text, className, icon }) => (
-  <button
-    className={`bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition flex items-center space-x-2 ${className}`}
-  >
-    <span>{text}</span>
-    {icon && <span>{icon}</span>}
-  </button>
-);
+import Button from "./tools/Button.jsx";
 
 const ServiceSection = ({ title, description, highlights }) => (
   <div className="border border-about-bg p-6 rounded-lg space-y-4">
     <div className="flex items-center space-x-2">
       <h2 className="text-2xl font-semibold flex items-center space-x-2">
-        <span>{title}</span>
+        <span className="uppercase">{title}</span>
         <FaExternalLinkAlt className="text-blue-400" />
       </h2>
     </div>
@@ -51,7 +43,7 @@ export default function Services() {
         <div className="relative flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
           <div className="flex-1 space-y-4">
             <ServiceSection
-              title="EVENTS"
+              title="Events"
               description="Our event photography service is dedicated to capturing the magic of your special occasions. Whether it's a wedding, corporate event, or milestone celebration, we're there to document every heartfelt moment. We blend into the background, ensuring natural and candid shots that reflect the emotions of the day."
               highlights={highlights}
             />

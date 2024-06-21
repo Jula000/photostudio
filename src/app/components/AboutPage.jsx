@@ -1,52 +1,7 @@
 import Image from "next/image";
-import { FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
-
-const Button = ({ text, className }) => (
-  <button
-    className={`bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 ${className}`}
-  >
-    {text}
-  </button>
-);
-
-const Section = ({ title, children }) => (
-  <div className="border border-about-bg p-6 rounded-lg space-y-4">
-    <div className="flex items-center space-x-2">
-      <span className="text-blue-400">✦</span>
-      <h2 className="text-xl font-semibold">{title}</h2>
-    </div>
-    {children}
-  </div>
-);
-
-const SocialMediaButtons = () => (
-  <div className="inline-flex border border-about-bg px-4 py-2 rounded-3xl mr-6	 ">
-    <a
-      href="https://facebook.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-500 hover:text-white mr-2"
-    >
-      <FaFacebookF />
-    </a>
-    <a
-      href="https://x.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-500 hover:text-white mr-2"
-    >
-      <FaXTwitter />
-    </a>
-    <a
-      href="https://linkedin.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-500 hover:text-white"
-    >
-      <FaLinkedinIn />
-    </a>
-  </div>
-);
+import SocialMediaButtons from "./tools/SocialMediaBtn.jsx";
+import Section from "./tools/Section.jsx";
+import Button from "./tools/Button.jsx";
 
 export default function About() {
   return (
@@ -82,7 +37,7 @@ export default function About() {
               <p>Email: damienbraun@gmail.com</p>
               <p>Phone Number: +00 0000000000</p>
               <div className="flex">
-                <SocialMediaButtons />
+                <SocialMediaButtons className="inline-flex border border-about-bg px-4 py-2 rounded-3xl mr-6" />
                 <div className="flex space-x-4">
                   <Button text="Let's Work" />
                   <Button text="Download CV" />
