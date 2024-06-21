@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Header from "./components/Header";
 import PhotoGrid from "./components/PhotoGrid";
+import About from "./components/AboutPage.jsx";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <PhotoGrid />
+      <About />
     </main>
   );
 }
