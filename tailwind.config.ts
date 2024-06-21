@@ -16,6 +16,15 @@ const config: Config = {
       backgroundColor: {
         "main-color": "#121212",
       },
+<<<<<<< Updated upstream
+=======
+      fontFamily: {
+        manrope: "var(--font-manrope)",
+      },
+      colors: {
+        "about-bg": "#27272a",
+      },
+>>>>>>> Stashed changes
     },
   },
   plugins: [],
