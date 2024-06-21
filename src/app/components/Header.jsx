@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import NavLink from "./tools/NavLink";
-import Button from "./tools/Button";
+import NavLink from "./NavLink";
 
 export default function Header() {
   return (
@@ -21,10 +20,9 @@ export default function Header() {
 
         {/* Contact Me Button */}
         <Link href="/contact">
-          <Button
-            className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full"
-            text="Contact Me"
-          />
+          <button className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full">
+            Contact Me
+          </button>
         </Link>
       </div>
     </header>
