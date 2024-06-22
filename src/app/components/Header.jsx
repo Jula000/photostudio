@@ -5,7 +5,7 @@ import Button from "./common/Button.jsx";
 
 export default function Header() {
   return (
-    <header className="bg-black py-4">
+    <header className="py-4">
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
         <div className="text-white text-2xl font-bold">DAMIEN</div>
@@ -20,9 +20,7 @@ export default function Header() {
 
         {/* Contact Me Button */}
         <Link href="/contact">
-          <Button className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-full">
-            Contact Me
-          </Button>
+          <Button>Contact Me</Button>
         </Link>
       </div>
     </header>

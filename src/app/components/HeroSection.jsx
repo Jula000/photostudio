@@ -15,9 +15,9 @@ export default function HeroSection() {
         </h1>
       </div>
       <div className="flex font-manrope uppercase flex-col items-start font-semibold text-5xl">
-        <div className="flex">
+        <div className="flex mb-2">
           <span>Let's</span>
-          <Button className="px-6 py-3 bg-blue-500 text-white rounded-full ml-3 ">
+          <Button className="px-8 py-3 rounded-full ml-3 ">
             <Image src="/hero-btn.svg" width={20.62} height={20.62} />
           </Button>
         </div>

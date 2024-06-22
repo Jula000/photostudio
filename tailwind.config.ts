@@ -12,7 +12,7 @@ const config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       backgroundColor: {
-        "main-color": "#27272a",
+        "main-color": "#070708",
       },
       fontFamily: {
         manrope: "var(--font-manrope)",
