@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft, FaExternalLinkAlt } from "react-icons/fa";
-import Button from "./common/Button.jsx";
-import ServiceSection from "./common/ServiceSection.jsx";
+import Button from "./common/Button";
+import ServiceSection from "./common/ServiceSection";
 
 const highlights = [
   "Coverage for weddings, parties, corporate functions, and more.",

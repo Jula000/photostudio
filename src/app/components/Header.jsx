@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import NavLink from "./common/NavLink.jsx";
-import Button from "./common/Button.jsx";
+import NavLink from "./common/NavLink";
+import Button from "./common/Button";
 
 export default function Header() {
   return (
