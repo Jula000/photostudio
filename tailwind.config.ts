@@ -1,6 +1,3 @@
-import { Manrope } from "next/font/google";
-import defaultTheme from "tailwindcss/defaultTheme";
-
 const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,10 +12,13 @@ const config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       backgroundColor: {
-        "main-color": "#121212",
+        "main-color": "#070708",
       },
       fontFamily: {
         manrope: "var(--font-manrope)",
+      },
+      colors: {
+        "about-bg": "#27272a",
       },
     },
   },
