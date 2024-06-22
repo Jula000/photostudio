@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import imgBg from "../../../public/hero-bg.png";
+import Button from "./common/Button";
 
 export default function HeroSection() {
   return (
-    <div className="relative container mx-auto text-white h-[400px] flex items-center justify-between px-10 py-5 ">
+    <div className="relative container mx-auto text-white h-[400px] flex items-center justify-between px-10 py-5">
       <div className="flex flex-col justify-center z-10">
         <span className="text-sm uppercase tracking-widest font-manrope">
           Stunning Photography By
@@ -16,9 +17,9 @@ export default function HeroSection() {
       <div className="flex font-manrope uppercase flex-col items-start font-semibold text-5xl">
         <div className="flex">
           <span>Let's</span>
-          <button className="px-6 py-3 bg-blue-500 text-white rounded-full ml-3 ">
+          <Button className="px-6 py-3 bg-blue-500 text-white rounded-full ml-3 ">
             <Image src="/hero-btn.svg" width={20.62} height={20.62} />
-          </button>
+          </Button>
         </div>
         <span className=" font-bold ml-0 inline-block">Work Together</span>
       </div>

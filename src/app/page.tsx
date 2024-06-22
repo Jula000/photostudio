@@ -1,8 +1,8 @@
 import HeroSection from "./components/HeroSection";
 import Header from "./components/Header";
 import PhotoGrid from "./components/PhotoGrid";
-import About from "./components/AboutPage.jsx";
-import ServicePage from "./components/ServicePage.jsx";
+import AboutComponent from "./components/AboutComponent.jsx";
+import ServiceComponent from "./components/ServiceComponent.jsx";
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
       <Header />
       <HeroSection />
       <PhotoGrid />
-      <About />
-      <ServicePage />
+      <AboutComponent />
+      <ServiceComponent />
     </main>
   );
 }

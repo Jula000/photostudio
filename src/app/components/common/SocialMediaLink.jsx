@@ -1,5 +1,3 @@
-import { FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
-
 const SocialMediaLink = ({ href, icon: Icon }) => (
   <a
     href={href}
