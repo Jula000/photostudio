@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./common/Button";
 
 const projects = [
   {
@@ -30,22 +31,15 @@ const Portfolio = () => {
           Explore My Photography Work
         </h1>
         <div className="flex justify-center space-x-4 mb-6">
-          <button className="bg-gray-800 p-2 rounded">{"<"}</button>
-          <button className="bg-gray-800 p-2 rounded">{">"}</button>
+          <Button className="p-2 rounded-full">{"<"}</Button>
+          <Button className="p-2 rounded-full">{">"}</Button>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <Link href={project.link} key={index}>
-              <div className="relative group cursor-pointer">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={400}
-                  height={400}
-                  className="rounded-lg object-cover"
-                />
-                <div className="absolute inset-0 bg-black opacity-30 group-hover:opacity-50 rounded-lg"></div>
-                <div className="absolute bottom-4 left-4">
+              <div className="flex group cursor-pointer w-96 h-96 bg-[url('/kytsya.jpg')]">
+                <div className="inset-0 bg-black opacity-30 group-hover:opacity-50 rounded-lg"></div>
+                <div className="flex place-self-end bottom-4 left-4 flex-col">
                   <h2 className="text-xl font-semibold">{project.title}</h2>
                   <p className="text-sm">{project.date}</p>
                   <p className="mt-2 text-sm font-semibold">VIEW PROJECT</p>
@@ -56,9 +50,7 @@ const Portfolio = () => {
         </div>
         <div className="text-center mt-8">
           <Link href="/all-works">
-            <button className="bg-gray-800 px-6 py-3 rounded-lg">
-              View All Works →
-            </button>
+            <Button className="px-6 py-3 rounded-lg">View All Works →</Button>
           </Link>
         </div>
       </div>
