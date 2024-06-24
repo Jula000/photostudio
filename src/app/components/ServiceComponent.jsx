@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaArrowRight, FaArrowLeft, FaExternalLinkAlt } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Button from "./common/Button";
 import ServiceSection from "./common/ServiceSection";
 
