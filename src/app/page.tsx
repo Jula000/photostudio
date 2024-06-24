@@ -4,6 +4,7 @@ import PhotoGrid from "./components/PhotoGrid";
 import AboutComponent from "./components/AboutComponent";
 import ServiceComponent from "./components/ServiceComponent";
 import Portfolio from "./components/Portfolio";
+import FaqComponent from "./components/FaqComponent";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutComponent />
       <ServiceComponent />
       <Portfolio />
+      <FaqComponent />
     </main>
   );
 }
