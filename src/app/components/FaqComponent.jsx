@@ -50,7 +50,7 @@ const FaqComponent = () => {
       <h1 className="text-3xl font-bold mb-6">FREQUENTLY ASKED QUESTIONS</h1>
       <div className="flex flex-wrap">
         {faqData.map((faq, index) => (
-          <FaqItem key={index} faq={faq} index={index} />
+          <FaqItem key={index} answer={faq.answer} question={faq.question} />
         ))}
       </div>
     </div>

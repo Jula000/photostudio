@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 
-const FaqItem = ({ faq, index }) => {
+const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleOpen = () => {
+  const onToggleOpen = () => {
     setIsOpen(!isOpen);
   };
 
@@ -12,15 +12,15 @@ const FaqItem = ({ faq, index }) => {
     <div className="w-full md:w-1/2 p-2">
       <div className="mb-4">
         <button
-          onClick={toggleOpen}
+          onClick={onToggleOpen}
           className="flex justify-between w-full py-4 text-left focus:outline-none"
         >
-          <span className="font-semibold">{faq.question}</span>
+          <span className="font-semibold">{question}</span>
           <span>{isOpen ? "▲" : "▼"}</span>
         </button>
         {isOpen && (
           <div className="pl-4 text-gray-400">
-            <p>{faq.answer}</p>
+            <p>{answer}</p>
           </div>
         )}
       </div>
