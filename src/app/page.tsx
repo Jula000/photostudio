@@ -1,10 +1,10 @@
 import HeroSection from "./components/HeroSection";
 import Header from "./components/Header";
 import PhotoGrid from "./components/PhotoGrid";
-import AboutComponent from "./components/AboutComponent.jsx";
-import ServiceComponent from "./components/ServiceComponent.jsx";
-
-import FaqComponent from "./components/FaqComponent.jsx";
+import AboutComponent from "./components/AboutComponent";
+import ServiceComponent from "./components/ServiceComponent";
+import Portfolio from "./components/Portfolio";
+import FaqComponent from "./components/FaqComponent";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <PhotoGrid />
       <AboutComponent />
       <ServiceComponent />
+      <Portfolio />
       <FaqComponent />
     </main>
   );
