@@ -37,9 +37,12 @@ const Portfolio = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <Link href={project.link} key={index}>
-              <div className="flex group cursor-pointer w-96 h-96 bg-[url('/kytsya.jpg')]">
-                <div className="inset-0 bg-black opacity-30 group-hover:opacity-50 rounded-lg"></div>
-                <div className="flex place-self-end bottom-4 left-4 flex-col">
+              <div
+                className="flex group cursor-pointer w-96 h-96 bg-cover bg-center rounded-lg overflow-hidden relative"
+                style={{ backgroundImage: `url(${project.image})` }}
+              >
+                <div className="rounded-lg"></div>
+                <div className="flex place-self-end bottom-4 left-4 flex-col relative z-10">
                   <h2 className="text-xl font-semibold">{project.title}</h2>
                   <p className="text-sm">{project.date}</p>
                   <p className="mt-2 text-sm font-semibold">VIEW PROJECT</p>
