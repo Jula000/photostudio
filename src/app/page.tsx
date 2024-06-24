@@ -4,6 +4,8 @@ import PhotoGrid from "./components/PhotoGrid";
 import AboutComponent from "./components/AboutComponent.jsx";
 import ServiceComponent from "./components/ServiceComponent.jsx";
 
+import FaqComponent from "./components/FaqComponent.jsx";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-main-color">
@@ -12,6 +14,7 @@ export default function Home() {
       <PhotoGrid />
       <AboutComponent />
       <ServiceComponent />
+      <FaqComponent />
     </main>
   );
 }
