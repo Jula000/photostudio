@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Button from "../common/Button";
 import SocialMediaButtons from "../common/SocialMediaBtn";
-import Ratings from "./Ratings";
+import Ratings from "./Ratings/Ratings";
 
 const testimonials = [
   {
