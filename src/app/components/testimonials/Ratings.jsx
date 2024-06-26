@@ -1,4 +1,4 @@
-const TestimonialsRatings = ({ rating }) => {
+const Ratings = ({ rating }) => {
   const stars = Array(rating).fill(null);
 
   return (
@@ -12,4 +12,4 @@ const TestimonialsRatings = ({ rating }) => {
   );
 };
 
-export default TestimonialsRatings;
+export default Ratings;

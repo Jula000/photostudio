@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Button from "../common/Button";
 import SocialMediaButtons from "../common/SocialMediaBtn";
-import TestimonialsRatings from "../testimonials/TestimonialsRatings";
+import Ratings from "./Ratings";
 
 const testimonials = [
   {
@@ -60,7 +60,7 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="flex items-center mb-4">
-                <TestimonialsRatings rating={testimonial.rating} />
+                <Ratings rating={testimonial.rating} />
               </div>
               <p>{testimonial.text}</p>
             </div>
