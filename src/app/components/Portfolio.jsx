@@ -25,7 +25,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="ś text-white py-12">
+    <div className="text-white py-12">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold text-center mb-12">
           Explore My Photography Work
