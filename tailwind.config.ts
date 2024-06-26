@@ -10,6 +10,8 @@ const config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "glossy-gradient":
+          "linear-gradient(145deg, rgba(79, 70, 229, 1) 0%, rgba(49, 46, 129, 1) 100%)",
       },
       backgroundColor: {
         "main-color": "#070708",
@@ -19,6 +21,12 @@ const config = {
       },
       colors: {
         "about-bg": "#27272a",
+        "button-blue": "#4f46e5",
+      },
+      boxShadow: {
+        inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+        glossy:
+          "0 4px 6px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
       },
     },
   },

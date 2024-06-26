@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import imgBg from "../../../public/hero-bg.png";
 import Button from "./common/Button";
+import GlossyButton from "./common/GlossyButton";
 
 export default function HeroSection() {
   return (
@@ -17,9 +18,7 @@ export default function HeroSection() {
       <div className="flex font-manrope uppercase flex-col items-start font-semibold text-5xl">
         <div className="flex mb-2">
           <span>Let's</span>
-          <Button className="px-8 py-3 rounded-full ml-3 ">
-            <Image src="/hero-btn.svg" width={20.62} height={20.62} />
-          </Button>
+          <GlossyButton />
         </div>
         <span className=" font-bold ml-0 inline-block">Work Together</span>
       </div>

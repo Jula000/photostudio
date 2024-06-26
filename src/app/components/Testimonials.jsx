@@ -1,12 +1,32 @@
 import Link from "next/link";
 import Button from "./common/Button";
 import SocialMediaButtons from "./common/SocialMediaBtn";
-import testimonials from "../data/testimonials";
-import generateStars from "./common/GenerateStars";
+import TestimonialsRatings from "./common/TestimonialsRatings";
+
+const testimonials = [
+  {
+    name: "Emily Johnson",
+    location: "USA, California",
+    rating: 5,
+    text: "Damien's photography doesn't just capture moments; it captures emotions. His work is simply mesmerizing.",
+  },
+  {
+    name: "John Smith",
+    location: "USA, California",
+    rating: 5,
+    text: "Damien has an incredible talent for making every event feel effortless, and the results speak for themselves.",
+  },
+  {
+    name: "Samantha Davis",
+    location: "USA, California",
+    rating: 5,
+    text: "I was blown away by Damien's ability to capture the essence of our wedding day. His photographs are our cherished memories.",
+  },
+];
 
 const Testimonials = () => {
   return (
-    <div className="min-h-screen bg-black text-white py-12">
+    <div className="min-h-screen text-white py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-sm font-semibold uppercase text-gray-500">
           Testimonials
@@ -40,7 +60,7 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="flex items-center mb-4">
-                {generateStars(testimonial.rating)}
+                <TestimonialsRatings rating={testimonial.rating} />
               </div>
               <p>{testimonial.text}</p>
             </div>
