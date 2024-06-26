@@ -5,6 +5,7 @@ import AboutComponent from "./components/AboutComponent";
 import ServiceComponent from "./components/ServiceComponent";
 import Portfolio from "./components/Portfolio";
 import FaqComponent from "./components/FaqComponent";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ServiceComponent />
       <Portfolio />
       <FaqComponent />
+      <Testimonials />
     </main>
   );
 }
