@@ -3,7 +3,7 @@ import SocialMediaButtons from "./common/SocialMediaButton";
 import Section from "./common/Section";
 import Button from "./common/Button";
 
-export default function AboutComponent() {
+export default function AboutSection() {
   return (
     <div className="min-h-screen text-white flex items-center justify-center">
       <div className="max-w-4xl mx-auto p-6 space-y-6">

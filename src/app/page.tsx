@@ -1,7 +1,7 @@
 import HeroSection from "./components/HeroSection";
 import Header from "./components/Header";
 import PhotoGrid from "./components/PhotoGrid";
-import AboutComponent from "./components/AboutComponent";
+import AboutSection from "./components/AboutSection";
 import ServiceComponent from "./components/ServiceComponent";
 import Portfolio from "./components/Portfolio";
 import FaqComponent from "./components/FaqComponent";
@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <PhotoGrid />
-      <AboutComponent />
+      <AboutSection />
       <ServiceComponent />
       <Portfolio />
       <FaqComponent />
