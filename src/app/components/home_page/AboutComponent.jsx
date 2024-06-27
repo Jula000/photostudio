@@ -1,7 +1,7 @@
 import Image from "next/image";
-import SocialMediaButtons from "./common/SocialMediaButton";
-import Section from "./common/Section";
-import Button from "./common/Button";
+import SocialMediaButtons from "../common/SocialMediaButton";
+import Section from "../common/Section";
+import Button from "../common/Button";
 
 export default function AboutComponent() {
   return (

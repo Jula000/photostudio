@@ -1,14 +1,17 @@
-import SocialMediaButtons from "../components/common/SocialMediaBtn";
+import SocialMediaButtons from "./common/SocialMediaButton";
 import Link from "next/link";
 import Button from "./common/Button";
 import Image from "next/image";
-import DamienBg from "./common/DamienBg";
 
 export default function Footer() {
   return (
     <footer className="py-10">
-      <div>
-        <DamienBg />
+      <div className="flex-grow container mx-auto">
+        <section className="py-20">
+          <h1 className="text-136-px font-bold text-white/40 flex justify-end">
+            DAMIEN
+          </h1>
+        </section>
       </div>
       <div className="text-white min-h-screen flex flex-col">
         <div className="container mx-auto flex justify-between">
