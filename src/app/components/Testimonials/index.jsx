@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Button from "../common/Button";
-import SocialMediaButtons from "../common/SocialMediaBtn";
+import SocialMediaButtons from "../common/SocialMediaButton";
 import Ratings from "./Ratings";
 
 const testimonials = [
