@@ -1,21 +1,22 @@
+import React from "react";
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import Button from "./common/Button";
-import ServiceSection from "./common/ServiceSection";
+import Button from "../../common/Button";
+import ServiceSection from "../../common/ServiceSection";
 
-const highlights = [
+const highlights: string[] = [
   "Coverage for weddings, parties, corporate functions, and more.",
   "Skilled photographers who know how to seize the moment.",
   "A mix of candid and posed shots for a comprehensive story.",
   "Quick turnaround for you to relive the day's highlights.",
 ];
-const title = ["Events"];
 
-const description = [
-  "Our event photography service is dedicated to capturing the magic of your special occasions. Whether it's a wedding, corporate event, or milestone celebration, we're there to document every heartfelt moment. We blend into the background, ensuring natural and candid shots that reflect the emotions of the day.",
-];
+const title: string = "Events";
 
-export default function ServiceComponent() {
+const description: string =
+  "Our event photography service is dedicated to capturing the magic of your special occasions. Whether it's a wedding, corporate event, or milestone celebration, we're there to document every heartfelt moment. We blend into the background, ensuring natural and candid shots that reflect the emotions of the day.";
+
+const ServiceComponent: React.FC = () => {
   return (
     <div className="min-h-screen text-white flex items-center justify-center">
       <div className="max-w-5xl mx-auto p-6 space-y-6">
@@ -45,10 +46,12 @@ export default function ServiceComponent() {
           </div>
         </div>
         <div className="flex space-x-4 justify-end">
-          <Button> {<FaArrowLeft />}</Button>
+          <Button>{<FaArrowLeft />}</Button>
           <Button>{<FaArrowRight />}</Button>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default ServiceComponent;

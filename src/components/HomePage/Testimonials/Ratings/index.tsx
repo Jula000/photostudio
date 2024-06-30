@@ -1,4 +1,10 @@
-const Ratings = ({ rating }) => {
+import React from "react";
+
+interface RatingsProps {
+  rating: number;
+}
+
+const Ratings: React.FC<RatingsProps> = ({ rating }) => {
   const stars = Array(rating).fill(null);
 
   return (

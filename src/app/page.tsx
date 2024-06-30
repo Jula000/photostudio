@@ -1,25 +1,21 @@
-import HeroSection from "./components/HeroSection";
-import Header from "./components/Header";
-import PhotoGrid from "./components/PhotoGrid";
-import AboutSection from "./components/AboutSection";
-import ServiceComponent from "./components/ServiceComponent";
-import Portfolio from "./components/Portfolio";
-import FaqComponent from "./components/FaqComponent";
-import Testimonials from "./components/Testimonials";
-import Footer from "./components/Footer";
+import HeroSection from "../components/HomePage/Hero/HeroSection";
+import Header from "../components/common/Header";
+import PhotoGrid from "../components/HomePage/PhotoGrid/PhotoGrid";
+import AboutComponent from "../components/HomePage/About/AboutComponent";
+import ServiceComponent from "../components/HomePage/Service/ServiceComponent";
+import Portfolio from "../components/HomePage/Portfolio/Portfolio";
+import FaqComponent from "../components/HomePage/FAQ/FaqComponent";
 
-export default function Home() {
+export default function home() {
   return (
     <main className="flex min-h-screen flex-col bg-main-color">
       <Header />
       <HeroSection />
       <PhotoGrid />
-      <AboutSection />
+      <AboutComponent />
       <ServiceComponent />
       <Portfolio />
       <FaqComponent />
-      <Testimonials />
-      <Footer />
     </main>
   );
 }

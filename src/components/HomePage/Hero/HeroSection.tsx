@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import imgBg from "../../../public/hero-bg.png";
-import Button from "./common/Button";
-import GlossyButton from "./common/GlossyButton";
+import Button from "../../common/Button";
 
-export default function HeroSection() {
+import imgBg from "../../../../public/hero-bg.png";
+
+const HeroSection: React.FC = () => {
   return (
     <div className="relative container mx-auto text-white h-[400px] flex items-center justify-between px-10 py-5">
       <div className="flex flex-col justify-center z-10">
@@ -18,19 +18,31 @@ export default function HeroSection() {
       <div className="flex font-manrope uppercase flex-col items-start font-semibold text-5xl">
         <div className="flex mb-2">
           <span>Let's</span>
-          <GlossyButton />
+          <Button className="px-8 py-3 rounded-full ml-3 ">
+            <Image
+              src="/hero-btn.svg"
+              alt="Hero Button"
+              width={20.62}
+              height={20.62}
+            />
+          </Button>
         </div>
-        <span className=" font-bold ml-0 inline-block">Work Together</span>
+        <span className="font-bold ml-0 inline-block">Work Together</span>
       </div>
       <div className="absolute inset-0 z-0 flex justify-center align-middle">
         <Image
           src={imgBg}
           width={346}
           height={346}
+          style={{
+            objectFit: "contain",
+          }}
           alt="Header background"
-          className="h-[346px]"
+          priority
         />
       </div>
     </div>
   );
-}
+};
+
+export default HeroSection;

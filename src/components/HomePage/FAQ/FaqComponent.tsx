@@ -1,7 +1,12 @@
 import React from "react";
-import FaqItem from "./common/FaqItem";
+import FaqItem from "../../common/FaqItem";
 
-const faqData = [
+interface FaqItemData {
+  question: string;
+  answer: string;
+}
+
+const faqData: FaqItemData[] = [
   {
     question: "WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZE IN?",
     answer:
@@ -44,9 +49,9 @@ const faqData = [
   },
 ];
 
-const FaqComponent = () => {
+const FaqComponent: React.FC = () => {
   return (
-    <div className="text-white p-8">
+    <div className="bg-black text-white p-8">
       <h1 className="text-3xl font-bold mb-6">FREQUENTLY ASKED QUESTIONS</h1>
       <div className="flex flex-wrap">
         {faqData.map((faq, index) => (
