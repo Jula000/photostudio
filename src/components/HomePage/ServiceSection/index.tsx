@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Button from "../../common/Button";
-import ServicePart from "../../common/ServicePart";
+import ServicePart from "../../common/ServiceHighlights";
 
 const highlights: string[] = [
   "Coverage for weddings, parties, corporate functions, and more.",

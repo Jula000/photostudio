@@ -1,13 +1,13 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-interface ServiceSectionProps {
+interface ServiceHighlightsProps {
   title: string;
   description: string;
   highlights: string[];
 }
 
-const ServicePart: React.FC<ServiceSectionProps> = ({
+const ServiceHighlights: React.FC<ServiceHighlightsProps> = ({
   title,
   description,
   highlights,
@@ -33,4 +33,4 @@ const ServicePart: React.FC<ServiceSectionProps> = ({
   );
 };
 
-export default ServicePart;
+export default ServiceHighlights;
