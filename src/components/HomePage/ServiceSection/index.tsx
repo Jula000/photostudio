@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Button from "../../common/Button";
-import ServicePart from "../../common/ServiceHighlights";
+import ServiceHighlights from "../../common/ServiceHighlights";
 
 const highlights: string[] = [
   "Coverage for weddings, parties, corporate functions, and more.",
@@ -29,7 +29,7 @@ const ServiceSection: React.FC = () => {
         </div>
         <div className="relative flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
           <div className="flex-1 space-y-4">
-            <ServicePart
+            <ServiceHighlights
               title={title}
               description={description}
               highlights={highlights}
