@@ -1,4 +1,4 @@
-import AboutPage from "../../components/AboutPage/AboutPage";
+import AboutPage from "../../components/AboutPage";
 import Header from "../../components/common/Header";
 import Footer from "../../components/common/Footer";
 
