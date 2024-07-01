@@ -17,9 +17,9 @@ const Header: React.FC = () => {
         </nav>
 
         <Link href="/contact" passHref>
-          <p className="inline-block">
+          <div className="inline-block">
             <Button>Contact Me</Button>
-          </p>
+          </div>
         </Link>
       </div>
     </header>
