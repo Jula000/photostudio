@@ -1,9 +1,10 @@
-import SocialMediaButtons from "./common/SocialMediaButton";
+import React from "react";
 import Link from "next/link";
-import Button from "./common/Button";
 import Image from "next/image";
+import SocialMediaButtons from "./SocialMediaButtons";
+import Button from "./Button";
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className="py-10">
       <div className="flex-grow container mx-auto">
@@ -24,10 +25,15 @@ export default function Footer() {
                 <div className="flex mb-2">
                   <span>Let's</span>
                   <Button className="px-8 py-3 rounded-full ml-3 ">
-                    <Image src="/hero-btn.svg" width={20.62} height={20.62} />
+                    <Image
+                      src="/hero-btn.svg"
+                      alt="hero"
+                      width={20.62}
+                      height={20.62}
+                    />
                   </Button>
                 </div>
-                <span className=" font-bold ml-0 inline-block">
+                <span className="font-bold ml-0 inline-block">
                   Work Together
                 </span>
               </div>
@@ -92,4 +98,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

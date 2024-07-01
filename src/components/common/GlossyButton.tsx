@@ -1,8 +1,7 @@
+import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import Button from "./Button";
 
-const GlossyButton = () => {
+const GlossyButton: React.FC = () => {
   return (
     <button className="bg-button-blue px-8 py-3 rounded-full ml-3 flex items-center justify-center shadow-lg">
       <Image

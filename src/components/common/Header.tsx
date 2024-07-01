@@ -1,16 +1,14 @@
-"use client";
+import React from "react";
 import Link from "next/link";
-import NavLink from "./common/NavLink";
-import Button from "./common/Button";
+import NavLink from "./NavLink";
+import Button from "./Button";
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
     <header className="py-4">
       <div className="container mx-auto flex justify-between items-center px-6">
-        {/* Logo */}
         <div className="text-white text-2xl font-bold">DAMIEN</div>
 
-        {/* Navigation */}
         <nav className="flex space-x-6">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About Me</NavLink>
@@ -18,11 +16,14 @@ export default function Header() {
           <NavLink href="/services">Services</NavLink>
         </nav>
 
-        {/* Contact Me Button */}
-        <Link href="/contact">
-          <Button>Contact Me</Button>
+        <Link href="/contact" passHref>
+          <div className="inline-block">
+            <Button>Contact Me</Button>
+          </div>
         </Link>
       </div>
     </header>
   );
-}
+};
+
+export default Header;

@@ -1,9 +1,10 @@
+import React from "react";
 import Image from "next/image";
-import SocialMediaButtons from "./common/SocialMediaButton";
-import Section from "./common/Section";
-import Button from "./common/Button";
+import SocialMediaButtons from "../../common/SocialMediaButtons";
+import Section from "../../common/Section";
+import Button from "../../common/Button";
 
-export default function AboutSection() {
+const AboutSection: React.FC = () => {
   return (
     <div className="min-h-screen text-white flex items-center justify-center">
       <div className="max-w-4xl mx-auto p-6 space-y-6">
@@ -39,8 +40,8 @@ export default function AboutSection() {
               <div className="flex">
                 <SocialMediaButtons className="inline-flex border border-about-bg px-4 py-2 rounded-3xl mr-6" />
                 <div className="flex space-x-4">
-                  <Button className="text-sm"> Let's Work </Button>
-                  <Button className="text-sm"> Download CV </Button>
+                  <Button className="text-sm">Let's Work</Button>
+                  <Button className="text-sm">Download CV</Button>
                 </div>
               </div>
             </Section>
@@ -49,4 +50,6 @@ export default function AboutSection() {
       </div>
     </div>
   );
-}
+};
+
+export default AboutSection;

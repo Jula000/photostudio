@@ -1,9 +1,17 @@
+import React from "react";
 import Link from "next/link";
-import Button from "../common/Button";
-import SocialMediaButtons from "../common/SocialMediaButton";
+import Button from "../../common/Button";
+import SocialMediaButtons from "../../common/SocialMediaButtons";
 import Ratings from "./Ratings";
 
-const testimonials = [
+interface Testimonial {
+  name: string;
+  location: string;
+  rating: number;
+  text: string;
+}
+
+const testimonials: Testimonial[] = [
   {
     name: "Emily Johnson",
     location: "USA, California",
@@ -24,7 +32,7 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials: React.FC = () => {
   return (
     <div className="min-h-screen text-white py-12">
       <div className="container mx-auto px-4">

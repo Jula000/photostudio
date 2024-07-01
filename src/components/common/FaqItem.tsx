@@ -1,8 +1,13 @@
 "use client";
 import React, { useState } from "react";
 
-const FaqItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+interface FaqItemProps {
+  question: string;
+  answer: string;
+}
+
+const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const onToggleOpen = () => {
     setIsOpen(!isOpen);
