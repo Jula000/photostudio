@@ -1,10 +1,10 @@
-import HeroSection from "../components/HomePage/Hero/HeroSection";
+import HeroSection from "../components/HomePage/Hero";
 import Header from "../components/common/Header";
-import PhotoGrid from "../components/HomePage/PhotoGrid/PhotoGrid";
-import AboutSection from "../components/HomePage/About/AboutSection";
-import ServiceComponent from "../components/HomePage/Service/ServiceComponent";
-import Portfolio from "../components/HomePage/Portfolio/Portfolio";
-import FaqComponent from "../components/HomePage/FAQ/FaqComponent";
+import PhotoGrid from "../components/HomePage/PhotoGrid";
+import AboutSection from "../components/HomePage/About";
+import ServiceSection from "../components/HomePage/Service";
+import Portfolio from "../components/HomePage/Portfolio";
+import FaqSection from "../components/HomePage/FAQ";
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
       <HeroSection />
       <PhotoGrid />
       <AboutSection />
-      <ServiceComponent />
+      <ServiceSection />
       <Portfolio />
-      <FaqComponent />
+      <FaqSection />
     </main>
   );
 }

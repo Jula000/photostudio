@@ -7,7 +7,7 @@ interface ServiceSectionProps {
   highlights: string[];
 }
 
-const ServiceSection: React.FC<ServiceSectionProps> = ({
+const ServicePart: React.FC<ServiceSectionProps> = ({
   title,
   description,
   highlights,
@@ -33,4 +33,4 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
   );
 };
 
-export default ServiceSection;
+export default ServicePart;

@@ -49,7 +49,7 @@ const faqData: FaqItemData[] = [
   },
 ];
 
-const FaqComponent: React.FC = () => {
+const FaqSection: React.FC = () => {
   return (
     <div className="text-white p-8">
       <h1 className="text-3xl font-bold mb-6">FREQUENTLY ASKED QUESTIONS</h1>
@@ -62,4 +62,4 @@ const FaqComponent: React.FC = () => {
   );
 };
 
-export default FaqComponent;
+export default FaqSection;
