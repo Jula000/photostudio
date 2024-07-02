@@ -1,12 +1,16 @@
-import AboutPage from "../../components/AboutPage";
-import Header from "../../components/common/Header";
-import Footer from "../../components/common/Footer";
+import AboutSection from "@/components/AboutPage/AboutSection";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
+import Journey from "@/components/AboutPage/Journey";
+import Testimonials from "@/components/HomePage/Testimonials";
 
-export default function About() {
+export default function AboutPage() {
   return (
     <main className="flex min-h-screen flex-col bg-main-color">
       <Header />
-      <AboutPage />
+      <AboutSection />
+      <Journey />
+      <Testimonials />
       <Footer />
     </main>
   );
