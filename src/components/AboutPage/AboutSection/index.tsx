@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutPage = () => {
+const AboutSection = () => {
   return (
     <div className="text-white">
       <section className="container mx-auto px-4 py-16">
@@ -67,4 +67,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default AboutSection;
