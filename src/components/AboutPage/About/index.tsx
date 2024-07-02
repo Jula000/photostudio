@@ -2,8 +2,9 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen text-white">
+    <div className="text-white">
       <section className="container mx-auto px-4 py-16">
+        <p className="uppercase text-base text-gray-400">About</p>
         <h1 className="text-4xl font-bold mb-8">ABOUT DAMIEN BRAUN</h1>
         <div className="flex flex-wrap mb-16">
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 p-4">

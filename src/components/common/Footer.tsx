@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           </h1>
         </section>
       </div>
-      <div className="text-white min-h-screen flex flex-col">
+      <div className="text-white flex flex-col">
         <div className="container mx-auto flex justify-between">
           <div>
             <h2 className="text-lg font-semibold">

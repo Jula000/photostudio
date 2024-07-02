@@ -34,7 +34,7 @@ const testimonials: Testimonial[] = [
 
 const Testimonials: React.FC = () => {
   return (
-    <div className="min-h-screen text-white py-12">
+    <div className="text-white py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-sm font-semibold uppercase text-gray-500">
           Testimonials
