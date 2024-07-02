@@ -37,24 +37,28 @@ const Portfolio: React.FC = () => {
         <h1 className="text-4xl font-bold text-center mb-12">
           Explore My Photography Work
         </h1>
-        <div className="flex justify-center space-x-4 mb-6">
+        <div className="flex justify-end space-x-4 mb-6">
           <Button className="p-2 rounded-full">{"<"}</Button>
           <Button className="p-2 rounded-full">{">"}</Button>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <Link
-              href={project.link}
-              key={index}
-              className="flex group cursor-pointer w-96 h-96 bg-cover bg-center rounded-lg overflow-hidden relative"
-              style={{ backgroundImage: `url(${project.image})` }}
-            >
-              <div className="flex place-self-end bottom-4 left-4 flex-col relative z-10">
+            <div key={index} className="flex flex-col items-center w-96">
+              <Link
+                href={project.link}
+                className="group cursor-pointer w-full h-96 bg-cover bg-center rounded-lg overflow-hidden"
+                style={{ backgroundImage: `url(${project.image})` }}
+              ></Link>
+              <div className="mt-4 flex flex-col self-start">
                 <h2 className="text-xl font-semibold">{project.title}</h2>
                 <p className="text-sm">{project.date}</p>
-                <p className="mt-2 text-sm font-semibold">VIEW PROJECT</p>
+                <Link href={project.link} passHref>
+                  <p className="mt-2 text-sm font-semibold text-blue-500 cursor-pointer">
+                    VIEW PROJECT
+                  </p>
+                </Link>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
         <div className="text-center mt-8">
