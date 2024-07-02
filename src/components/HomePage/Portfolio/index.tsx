@@ -48,7 +48,7 @@ const Portfolio: React.FC = () => {
                 href={project.link}
                 className="group cursor-pointer w-full h-96 bg-cover bg-center rounded-lg overflow-hidden"
                 style={{ backgroundImage: `url(${project.image})` }}
-              ></Link>
+              />
               <div className="mt-4 flex flex-col self-start">
                 <h2 className="text-xl font-semibold">{project.title}</h2>
                 <p className="text-sm">{project.date}</p>

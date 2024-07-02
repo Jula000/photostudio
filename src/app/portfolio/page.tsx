@@ -1,6 +1,6 @@
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
-import PortfolioSection from "@/components/PortfolioPage/PortfolioSection/";
+import PortfolioSection from "@/components/PortfolioPage/PortfolioSection";
 import PhotographySection from "@/components/PortfolioPage/PhotographySection";
 import FaqSection from "@/components/HomePage/FaqSection";
 import Testimonials from "@/components/HomePage/Testimonials";

@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 
 const brands = [
-  { name: "Infinity Parker", logo: "/Logo.png", width: "251" },
-  { name: "Omega Million", logo: "/Logo1.png", width: "353" },
-  { name: "WheelApp", logo: "/Logo2.png", width: "204" },
-  { name: "High Country Club", logo: "/Logo3.png", width: "322" },
-  { name: "EdgeKart", logo: "/Logo4.png", width: "183" },
+  { name: "Infinity Parker", logo: "/Logo.png", width: 251 },
+  { name: "Omega Million", logo: "/Logo1.png", width: 353 },
+  { name: "WheelApp", logo: "/Logo2.png", width: 204 },
+  { name: "High Country Club", logo: "/Logo3.png", width: 322 },
+  { name: "EdgeKart", logo: "/Logo4.png", width: 183 },
 ];
 
 const PortfolioSection: React.FC = () => {
@@ -33,7 +33,7 @@ const PortfolioSection: React.FC = () => {
               src={brand.logo}
               alt={brand.name}
               height={50}
-              width={parseInt(brand.width)}
+              width={brand.width}
               className="grayscale hover:grayscale-0"
             />
           </div>
