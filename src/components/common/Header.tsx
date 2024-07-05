@@ -16,7 +16,7 @@ const Header: React.FC = () => {
           <NavLink href="/services">Services</NavLink>
         </nav>
 
-        <Link href="/contact" passHref>
+        <Link href="/contact">
           <div className="inline-block">
             <Button>Contact Me</Button>
           </div>

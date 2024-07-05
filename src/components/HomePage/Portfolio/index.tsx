@@ -44,20 +44,19 @@ const Portfolio: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div key={index} className="flex flex-col items-center w-96">
-              <Link
-                href={project.link}
-                className="group cursor-pointer w-full h-96 bg-cover bg-center rounded-lg overflow-hidden"
-                style={{ backgroundImage: `url(${project.image})` }}
-              />
-              <div className="mt-4 flex flex-col self-start">
-                <h2 className="text-xl font-semibold">{project.title}</h2>
-                <p className="text-sm">{project.date}</p>
-                <Link href={project.link} passHref>
-                  <p className="mt-2 text-sm font-semibold text-blue-500 cursor-pointer">
+              <Link href={project.link} className="group cursor-pointer w-full">
+                <div
+                  className="w-full h-96 bg-cover bg-center rounded-lg overflow-hidden"
+                  style={{ backgroundImage: `url(${project.image})` }}
+                />
+                <div className="mt-4 flex flex-col self-start">
+                  <h2 className="text-xl font-semibold">{project.title}</h2>
+                  <p className="text-sm">{project.date}</p>
+                  <p className="mt-2 text-sm font-semibold text-blue-500">
                     VIEW PROJECT
                   </p>
-                </Link>
-              </div>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
