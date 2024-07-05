@@ -51,7 +51,7 @@ const faqData: FaqItemData[] = [
 
 const FaqSection: React.FC = () => {
   return (
-    <div className="text-white p-8">
+    <div className="text-white p-8 container self-center">
       <h1 className="text-3xl font-bold mb-6">FREQUENTLY ASKED QUESTIONS</h1>
       <div className="flex flex-wrap">
         {faqData.map((faq, index) => (
