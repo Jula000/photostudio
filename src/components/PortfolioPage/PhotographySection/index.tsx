@@ -1,7 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import Button from "@/components/common/Button";
-import renderProjects from "@/components/PortfolioPage/components/renderProjects";
+import React from 'react';
+import ProjectList from '@/components/common/ProjectList';
+
 const projects = {
   portraits: [
     { title: "Faces of Resilience", date: "March 2022", image: "/kytsya.jpg" },
@@ -33,15 +32,15 @@ const PhotographySection: React.FC = () => {
     <div className="text-white py-16">
       <section className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8">PORTRAITS PHOTOGRAPHY</h1>
-        {renderProjects(projects.portraits)}
+        <ProjectList projects={projects.portraits} />
       </section>
       <section className="container mx-auto px-4 mt-16">
         <h1 className="text-4xl font-bold mb-8">EVENTS PHOTOGRAPHY</h1>
-        {renderProjects(projects.events)}
+        <ProjectList projects={projects.events} />
       </section>
       <section className="container mx-auto px-4 mt-16">
         <h1 className="text-4xl font-bold mb-8">COMMERCIAL PHOTOGRAPHY</h1>
-        {renderProjects(projects.commercial)}
+        <ProjectList projects={projects.commercial} />
       </section>
     </div>
   );
