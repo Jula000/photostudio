@@ -33,10 +33,6 @@ const Portfolio: React.FC = () => {
         </h1>
       </div>
       <div className="container mx-auto">
-        <div className="flex justify-end space-x-4 mb-6">
-          <Button className="p-2 rounded-full">{"<"}</Button>
-          <Button className="p-2 rounded-full">{">"}</Button>
-        </div>
         <ProjectList projects={projects} />
       </div>
       <div className="text-center mt-8">

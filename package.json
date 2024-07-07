@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@next/font": "^14.2.4",
-    "codemod": "^0.11.22",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
