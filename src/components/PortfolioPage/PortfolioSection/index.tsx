@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 
 const brands = [
-  { name: "Infinity Parker", logo: "/Logo.png", width: 251 },
-  { name: "Omega Million", logo: "/Logo1.png", width: 353 },
-  { name: "WheelApp", logo: "/Logo2.png", width: 204 },
-  { name: "High Country Club", logo: "/Logo3.png", width: 322 },
-  { name: "EdgeKart", logo: "/Logo4.png", width: 183 },
+  { name: "Infinity Parker", logo: "/brands/logo1.png", width: 251 },
+  { name: "Omega Million", logo: "/brands/logo2.png", width: 353 },
+  { name: "WheelApp", logo: "/brands/logo3.png", width: 204 },
+  { name: "High Country Club", logo: "/brands/logo4.png", width: 322 },
+  { name: "EdgeKart", logo: "/brands/logo5.png", width: 183 },
 ];
 
 const PortfolioSection: React.FC = () => {
@@ -23,7 +23,7 @@ const PortfolioSection: React.FC = () => {
           to capture and witness the world through my lens.
         </p>
         <h2 className="mb-4 uppercase text-gray-400 text-center">
-          BRANDS I HAVE WORKED WITH
+          brands i have worked with
         </h2>
       </section>
       <div className="flex flex-wrap justify-center bg-zinc-900">
