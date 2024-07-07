@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 
 const brands = [
-  { name: "Infinity Parker", logo: "/logo1.png", width: 251 },
-  { name: "Omega Million", logo: "/logo2.png", width: 353 },
-  { name: "WheelApp", logo: "/logo3.png", width: 204 },
-  { name: "High Country Club", logo: "/logo4.png", width: 322 },
-  { name: "EdgeKart", logo: "/logo5.png", width: 183 },
+  { name: "Infinity Parker", logo: "/brands/logo1.png", width: 251 },
+  { name: "Omega Million", logo: "/brands/logo2.png", width: 353 },
+  { name: "WheelApp", logo: "/brands/logo3.png", width: 204 },
+  { name: "High Country Club", logo: "/brands/logo4.png", width: 322 },
+  { name: "EdgeKart", logo: "/brands/logo5.png", width: 183 },
 ];
 
 const PortfolioSection: React.FC = () => {
