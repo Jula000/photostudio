@@ -6,7 +6,7 @@ import Testimonials from "@/components/HomePage/Testimonials";
 
 export default function AboutPage() {
   return (
-    <main className="flex min-h-screen flex-col bg-main-color">
+    <main className="flex flex-col bg-main-color">
       <Header />
       <AboutSection />
       <Journey />

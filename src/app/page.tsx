@@ -5,10 +5,12 @@ import AboutSection from "../components/HomePage/AboutSection";
 import ServiceSection from "../components/HomePage/ServiceSection";
 import Portfolio from "../components/HomePage/Portfolio";
 import FaqSection from "../components/HomePage/FaqSection";
+import Footer from "@/components/common/Footer";
+import Testimonials from "@/components/HomePage/Testimonials";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-main-color">
+    <main className="flex flex-col bg-main-color">
       <Header />
       <HeroSection />
       <PhotoGrid />
@@ -16,6 +18,8 @@ export default function Home() {
       <ServiceSection />
       <Portfolio />
       <FaqSection />
+      <Testimonials />
+      <Footer />
     </main>
   );
 }
