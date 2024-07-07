@@ -45,8 +45,16 @@ const PhotographySection: React.FC<PhotographySectionProps> = ({
           />
         </div>
         <div className="flex mt-6 md:mt-0 space-x-2	justify-center">
-          {onPrev && <Button onClick={onPrev}>&larr;</Button>}
-          {onNext && <Button onClick={onNext}>&rarr;</Button>}
+          {onPrev && (
+            <Button onClick={onPrev} className="rounded-full">
+              &larr;
+            </Button>
+          )}
+          {onNext && (
+            <Button onClick={onNext} className="rounded-full">
+              &rarr;
+            </Button>
+          )}
         </div>
       </div>
     </div>

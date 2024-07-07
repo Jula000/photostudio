@@ -84,15 +84,58 @@ const Prices: React.FC = () => {
           onPrev={handlePrev}
           onNext={handleNext}
         />
-          <SessionPriceCard
-            title="Couple Session"
-            price={300}
-            duration="2.5-hour"
-            imagesIncluded={25}
-            additionalImagePrice={10}
-            description="Celebrate your love story with an intimate photoshoot."
-          />          
-          <SessionPriceCard
+        <SessionPriceCard
+          title="Couple Session"
+          price={300}
+          duration="2.5-hour"
+          imagesIncluded={25}
+          additionalImagePrice={10}
+          description="Celebrate your love story with an intimate photoshoot."
+        />
+        <SessionPriceCard
+          title="Couple Session"
+          price={300}
+          duration="2.5-hour"
+          imagesIncluded={25}
+          additionalImagePrice={10}
+          description="Celebrate your love story with an intimate photoshoot."
+        />
+        <SessionPriceCard
+          title="Couple Session"
+          price={300}
+          duration="2.5-hour"
+          imagesIncluded={25}
+          additionalImagePrice={10}
+          description="Celebrate your love story with an intimate photoshoot."
+        />
+      </div>
+      <div className="container mx-auto p-4">
+        <PhotographySection
+          title={sections2[currentSection].title}
+          description={sections2[currentSection].description}
+          linkText={sections2[currentSection].linkText}
+          linkUrl={sections2[currentSection].linkUrl}
+          imageUrl={sections2[currentSection].imageUrl}
+          onPrev={handlePrev}
+          onNext={handleNext}
+        />
+        <SessionPriceCard
+          title="Couple Session"
+          price={300}
+          duration="2.5-hour"
+          imagesIncluded={25}
+          additionalImagePrice={10}
+          description="Celebrate your love story with an intimate photoshoot."
+        />
+        <SessionPriceCard
+          title="Couple Session"
+          price={300}
+          duration="2.5-hour"
+          imagesIncluded={25}
+          additionalImagePrice={10}
+          description="Celebrate your love story with an intimate photoshoot."
+        />
+        <SessionPriceCard
           title="Couple Session"
           price={300}
           duration="2.5-hour"
