@@ -4,7 +4,7 @@ import SessionPriceCard from "@/components/ServicesPage/components/SessionPriceC
 import PhotographySection from "@/components/ServicesPage/components/PhotographySection";
 import { useState } from "react";
 
-const sections = [
+const photographySection = [
   {
     title: "Portrait Photography",
     description:
@@ -14,7 +14,8 @@ const sections = [
     imageUrl: "/kytsya.jpg",
   },
 ];
-const sections2 = [
+
+const photographySection2 = [
   {
     title: "Portrait Photography",
     description:
@@ -28,22 +29,26 @@ const Prices: React.FC = () => {
   const [currentSection, setCurrentSection] = useState(0);
 
   const handlePrev = () => {
-    setCurrentSection((prev) => (prev > 0 ? prev - 1 : sections.length - 1));
+    setCurrentSection((prev) =>
+      prev > 0 ? prev - 1 : photographySection.length - 1
+    );
   };
 
   const handleNext = () => {
-    setCurrentSection((prev) => (prev < sections.length - 1 ? prev + 1 : 0));
+    setCurrentSection((prev) =>
+      prev < photographySection.length - 1 ? prev + 1 : 0
+    );
   };
 
   return (
     <>
       <div className="container mx-auto p-4">
         <PhotographySection
-          title={sections[currentSection].title}
-          description={sections[currentSection].description}
-          linkText={sections[currentSection].linkText}
-          linkUrl={sections[currentSection].linkUrl}
-          imageUrl={sections[currentSection].imageUrl}
+          title={photographySection[currentSection].title}
+          description={photographySection[currentSection].description}
+          linkText={photographySection[currentSection].linkText}
+          linkUrl={photographySection[currentSection].linkUrl}
+          imageUrl={photographySection[currentSection].imageUrl}
           onPrev={handlePrev}
           onNext={handleNext}
         />
@@ -51,7 +56,7 @@ const Prices: React.FC = () => {
           <SessionPriceCard
             title="Individual Session"
             price={250}
-            duration="2-hour"
+            duration={2}
             imagesIncluded={20}
             additionalImagePrice={10}
             description="Ideal for capturing your unique personality and style."
@@ -59,7 +64,7 @@ const Prices: React.FC = () => {
           <SessionPriceCard
             title="Family Session"
             price={400}
-            duration="3-hour"
+            duration={2.5}
             imagesIncluded={30}
             additionalImagePrice={10}
             description="Perfect for creating lasting memories with your loved ones."
@@ -67,7 +72,7 @@ const Prices: React.FC = () => {
           <SessionPriceCard
             title="Couple Session"
             price={300}
-            duration="2.5-hour"
+            duration={2.5}
             imagesIncluded={25}
             additionalImagePrice={10}
             description="Celebrate your love story with an intimate photoshoot."
@@ -76,18 +81,18 @@ const Prices: React.FC = () => {
       </div>
       <div className="container mx-auto p-4">
         <PhotographySection
-          title={sections2[currentSection].title}
-          description={sections2[currentSection].description}
-          linkText={sections2[currentSection].linkText}
-          linkUrl={sections2[currentSection].linkUrl}
-          imageUrl={sections2[currentSection].imageUrl}
+          title={photographySection2[currentSection].title}
+          description={photographySection2[currentSection].description}
+          linkText={photographySection2[currentSection].linkText}
+          linkUrl={photographySection2[currentSection].linkUrl}
+          imageUrl={photographySection2[currentSection].imageUrl}
           onPrev={handlePrev}
           onNext={handleNext}
         />
         <SessionPriceCard
           title="Couple Session"
           price={300}
-          duration="2.5-hour"
+          duration={2.5}
           imagesIncluded={25}
           additionalImagePrice={10}
           description="Celebrate your love story with an intimate photoshoot."
@@ -95,7 +100,7 @@ const Prices: React.FC = () => {
         <SessionPriceCard
           title="Couple Session"
           price={300}
-          duration="2.5-hour"
+          duration={2.5}
           imagesIncluded={25}
           additionalImagePrice={10}
           description="Celebrate your love story with an intimate photoshoot."
@@ -103,7 +108,7 @@ const Prices: React.FC = () => {
         <SessionPriceCard
           title="Couple Session"
           price={300}
-          duration="2.5-hour"
+          duration={2.5}
           imagesIncluded={25}
           additionalImagePrice={10}
           description="Celebrate your love story with an intimate photoshoot."
@@ -111,18 +116,18 @@ const Prices: React.FC = () => {
       </div>
       <div className="container mx-auto p-4">
         <PhotographySection
-          title={sections2[currentSection].title}
-          description={sections2[currentSection].description}
-          linkText={sections2[currentSection].linkText}
-          linkUrl={sections2[currentSection].linkUrl}
-          imageUrl={sections2[currentSection].imageUrl}
+          title={photographySection2[currentSection].title}
+          description={photographySection2[currentSection].description}
+          linkText={photographySection2[currentSection].linkText}
+          linkUrl={photographySection2[currentSection].linkUrl}
+          imageUrl={photographySection2[currentSection].imageUrl}
           onPrev={handlePrev}
           onNext={handleNext}
         />
         <SessionPriceCard
           title="Couple Session"
           price={300}
-          duration="2.5-hour"
+          duration={2.5}
           imagesIncluded={25}
           additionalImagePrice={10}
           description="Celebrate your love story with an intimate photoshoot."
@@ -130,7 +135,7 @@ const Prices: React.FC = () => {
         <SessionPriceCard
           title="Couple Session"
           price={300}
-          duration="2.5-hour"
+          duration={2.5}
           imagesIncluded={25}
           additionalImagePrice={10}
           description="Celebrate your love story with an intimate photoshoot."
@@ -138,7 +143,7 @@ const Prices: React.FC = () => {
         <SessionPriceCard
           title="Couple Session"
           price={300}
-          duration="2.5-hour"
+          duration={2.5}
           imagesIncluded={25}
           additionalImagePrice={10}
           description="Celebrate your love story with an intimate photoshoot."

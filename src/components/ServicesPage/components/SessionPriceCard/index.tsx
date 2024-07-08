@@ -3,7 +3,7 @@ import React from "react";
 interface SessionPriceCardProps {
   title: string;
   price: number;
-  duration: string;
+  duration: number;
   imagesIncluded: number;
   additionalImagePrice: number;
   description: string;
@@ -18,7 +18,7 @@ const SessionPriceCard: React.FC<SessionPriceCardProps> = ({
   description,
 }) => {
   return (
-    <div className="flex justify-between items-center text-white p-6 rounded-lg shadow-md">
+    <div className="flex justify-between items-center text-white p-6 my-4">
       <div>
         <h2 className="text-lg font-semibold">{title}</h2>
         <p className="text-4xl font-bold">${price}</p>
@@ -29,8 +29,8 @@ const SessionPriceCard: React.FC<SessionPriceCardProps> = ({
       <div className="flex flex-col space-y-2 text-sm">
         <p>★ {description}</p>
         <p>
-          ★ Includes a {duration} photoshoot and {imagesIncluded} professionally
-          edited images.
+          ★ Includes a {duration} {duration > 1 ? "hours" : "hour"} photoshoot
+          and {imagesIncluded} professionally edited images.
         </p>
         <p>
           ★ Additional images can be purchased at ${additionalImagePrice} each.
