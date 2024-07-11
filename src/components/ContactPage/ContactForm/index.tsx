@@ -2,7 +2,7 @@ import GlossyButton from "@/components/common/GlossyButton";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-const Contact: React.FC = () => {
+const ContactForm: React.FC = () => {
   return (
     <div className="text-white">
       <div className="container mx-auto px-4 py-12">
@@ -131,4 +131,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

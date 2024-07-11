@@ -1,7 +1,7 @@
 import React from "react";
 import SocialMediaButtons from "@/components/common/SocialMediaButtons";
 
-const Contact: React.FC = () => {
+const ContactSection: React.FC = () => {
   return (
     <div className=" text-white flex items-center justify-center">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-12">
@@ -24,4 +24,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;
