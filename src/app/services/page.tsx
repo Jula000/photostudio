@@ -4,7 +4,7 @@ import FaqSection from "@/components/HomePage/FaqSection";
 import ServicesSection from "@/components/ServicesPage/ServicesSection";
 import Prices from "@/components/ServicesPage/Prices";
 
-export default function Services() {
+export default function ServicesPage() {
   return (
     <main className="flex min-h-screen flex-col bg-main-color">
       <Header />

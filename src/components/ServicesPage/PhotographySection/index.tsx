@@ -44,7 +44,7 @@ const PhotographySection: React.FC<PhotographySectionProps> = ({
             className="bg-cover"
           />
         </div>
-        <div className="flex mt-6 md:mt-0 space-x-2	justify-center">
+        <div className="flex mt-6 md:mt-0 space-x-2 justify-center">
           {onPrev && (
             <Button onClick={onPrev} className="rounded-full">
               &larr;
