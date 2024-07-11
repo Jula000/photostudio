@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import SessionPriceCard from "@/components/ServicesPage/components/SessionPriceCard";
-import PhotographySection from "@/components/ServicesPage/components/PhotographySection";
+import SessionPriceCard from "@/components/ServicesPage/SessionPriceCard";
+import PhotographySection from "@/components/ServicesPage/PhotographySection";
 import { useState } from "react";
 
-const photographySection = [
+const portraitPhotography = [
   {
     title: "Portrait Photography",
     description:
@@ -15,28 +15,18 @@ const photographySection = [
   },
 ];
 
-const photographySection2 = [
-  {
-    title: "Portrait Photography",
-    description:
-      "Our portrait photography service is all about showcasing your unique personality. Whether you need a professional headshot, a family portrait, or a personal photoshoot, we create images that reflect your true self. We work closely with you to bring out your best angles and expressions, ensuring every portrait tells your story.",
-    linkText: "View Projects",
-    linkUrl: "/projects",
-    imageUrl: "/kytsya.jpg",
-  },
-];
 const Prices: React.FC = () => {
   const [currentSection, setCurrentSection] = useState(0);
 
   const handlePrev = () => {
     setCurrentSection((prev) =>
-      prev > 0 ? prev - 1 : photographySection.length - 1
+      prev > 0 ? prev - 1 : portraitPhotography.length - 1
     );
   };
 
   const handleNext = () => {
     setCurrentSection((prev) =>
-      prev < photographySection.length - 1 ? prev + 1 : 0
+      prev < portraitPhotography.length - 1 ? prev + 1 : 0
     );
   };
 
@@ -44,11 +34,11 @@ const Prices: React.FC = () => {
     <>
       <div className="container mx-auto p-4">
         <PhotographySection
-          title={photographySection[currentSection].title}
-          description={photographySection[currentSection].description}
-          linkText={photographySection[currentSection].linkText}
-          linkUrl={photographySection[currentSection].linkUrl}
-          imageUrl={photographySection[currentSection].imageUrl}
+          title={portraitPhotography[currentSection].title}
+          description={portraitPhotography[currentSection].description}
+          linkText={portraitPhotography[currentSection].linkText}
+          linkUrl={portraitPhotography[currentSection].linkUrl}
+          imageUrl={portraitPhotography[currentSection].imageUrl}
           onPrev={handlePrev}
           onNext={handleNext}
         />
@@ -81,11 +71,11 @@ const Prices: React.FC = () => {
       </div>
       <div className="container mx-auto p-4">
         <PhotographySection
-          title={photographySection2[currentSection].title}
-          description={photographySection2[currentSection].description}
-          linkText={photographySection2[currentSection].linkText}
-          linkUrl={photographySection2[currentSection].linkUrl}
-          imageUrl={photographySection2[currentSection].imageUrl}
+          title={portraitPhotography[currentSection].title}
+          description={portraitPhotography[currentSection].description}
+          linkText={portraitPhotography[currentSection].linkText}
+          linkUrl={portraitPhotography[currentSection].linkUrl}
+          imageUrl={portraitPhotography[currentSection].imageUrl}
           onPrev={handlePrev}
           onNext={handleNext}
         />
@@ -116,11 +106,11 @@ const Prices: React.FC = () => {
       </div>
       <div className="container mx-auto p-4">
         <PhotographySection
-          title={photographySection2[currentSection].title}
-          description={photographySection2[currentSection].description}
-          linkText={photographySection2[currentSection].linkText}
-          linkUrl={photographySection2[currentSection].linkUrl}
-          imageUrl={photographySection2[currentSection].imageUrl}
+          title={portraitPhotography[currentSection].title}
+          description={portraitPhotography[currentSection].description}
+          linkText={portraitPhotography[currentSection].linkText}
+          linkUrl={portraitPhotography[currentSection].linkUrl}
+          imageUrl={portraitPhotography[currentSection].imageUrl}
           onPrev={handlePrev}
           onNext={handleNext}
         />
