@@ -26,7 +26,7 @@ const PortfolioSection: React.FC = () => {
           brands i have worked with
         </h2>
       </section>
-      <div className="flex flex-wrap justify-center bg-zinc-900">
+      <div className="flex flex-wrap justify-center">
         {brands.map((brand, index) => (
           <div key={index} className="p-4">
             <Image
@@ -34,7 +34,6 @@ const PortfolioSection: React.FC = () => {
               alt={brand.name}
               height={50}
               width={brand.width}
-              className="grayscale hover:grayscale-0"
             />
           </div>
         ))}

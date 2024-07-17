@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Button from "../../common/Button";
 import ServiceHighlights from "../../common/ServiceHighlights";
 
@@ -19,10 +18,10 @@ const description: string =
 const ServiceSection: React.FC = () => {
   return (
     <div className="text-white flex items-center justify-center">
-      <div className="max-w-5xl mx-auto p-6 space-y-6">
+      <div className="mx-auto p-6 space-y-6  container">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-xl">SERVICES</h1>
+            <h1 className="uppercase text-base text-gray-400">Services</h1>
             <h1 className="text-4xl font-bold">MY PHOTOGRAPHY SERVICES</h1>
           </div>
           <Button>View All Services ➔</Button>
@@ -44,10 +43,6 @@ const ServiceSection: React.FC = () => {
               className="rounded-lg"
             />
           </div>
-        </div>
-        <div className="flex space-x-4 justify-end">
-          <Button>{<FaArrowLeft />}</Button>
-          <Button>{<FaArrowRight />}</Button>
         </div>
       </div>
     </div>

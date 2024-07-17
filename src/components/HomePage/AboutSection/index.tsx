@@ -7,9 +7,12 @@ import Button from "../../common/Button";
 const AboutSection: React.FC = () => {
   return (
     <div className="text-white flex items-center justify-center">
-      <div className="max-w-4xl mx-auto p-6 space-y-6">
+      <div className="container mx-auto p-6 space-y-6">
         <div className="flex justify-between items-center">
-          <h1 className="text-4xl font-bold">I AM DAMIEN</h1>
+          <div>
+            <p className="uppercase text-base text-gray-400">About</p>
+            <h1 className="text-4xl font-bold">I AM DAMIEN</h1>
+          </div>
           <Button>Know More</Button>
         </div>
         <div className="relative flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
@@ -35,10 +38,18 @@ const AboutSection: React.FC = () => {
               </p>
             </Section>
             <Section title="Contact Information">
-              <p>Email: damienbraun@gmail.com</p>
-              <p>Phone Number: +00 0000000000</p>
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                <ul className="mb-4 md:mb-0 md:mr-8">
+                  <p className="font-semibold">Email:</p>
+                  <li className="text-sm">damienbraun@gmail.com</li>
+                </ul>
+                <ul className="mb-4 md:mb-0 md:mr-8">
+                  <p className="font-semibold">Phone Number:</p>
+                  <li className="text-sm">+00 000000000</li>
+                </ul>
+              </div>
               <div className="flex">
-                <SocialMediaButtons className="inline-flex border border-about-bg px-4 py-2 rounded-3xl mr-6" />
+                <SocialMediaButtons className="inline-flex border border-about-bg px-3 py-1 rounded-3xl mr-5" />
                 <div className="flex space-x-4">
                   <Button className="text-sm">Let's Work</Button>
                   <Button className="text-sm">Download CV</Button>
