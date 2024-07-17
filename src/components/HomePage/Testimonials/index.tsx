@@ -36,16 +36,14 @@ const Testimonials: React.FC = () => {
   return (
     <div className="text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between border-b border-gray-700">
-          <div className="">
-            <h2 className="text-sm font-semibold uppercase text-gray-400">
-              Testimonials
-            </h2>
-            <h1 className="text-4xl font-bold mb-6">What My Clients Say</h1>
-            <p className="mb-3 text-gray-400">Total Reviews</p>
-            <p className="mb-6 text-4xl font-bold">323</p>
-          </div>
-          <div className="space-x-4 self-end mb-6">
+        <h2 className="text-sm font-semibold uppercase text-gray-500">
+          Testimonials
+        </h2>
+        <h1 className="text-4xl font-bold mb-6">What My Clients Say</h1>
+        <p className="mb-6 text-gray-400">Total Reviews</p>
+        <div className="flex">
+          <p className="mb-12 text-4xl font-bold">323</p>
+          <div className="flex-end space-x-4 mb-6">
             <Button className="p-2 rounded-full">{"<"}</Button>
             <Button className="p-2 rounded-full">{">"}</Button>
             <Link href="/all-testimonials">

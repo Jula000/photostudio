@@ -5,7 +5,7 @@ import PhotographySection from "@/components/PortfolioPage/PhotographySection";
 import FaqSection from "@/components/HomePage/FaqSection";
 import Testimonials from "@/components/HomePage/Testimonials";
 
-export default function Portfolio() {
+export default function PortfolioPage() {
   return (
     <main className="flex flex-col bg-main-color">
       <Header />
