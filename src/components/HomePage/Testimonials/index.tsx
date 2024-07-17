@@ -36,22 +36,22 @@ const Testimonials: React.FC = () => {
   return (
     <div className="text-white py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-sm font-semibold uppercase text-gray-500">
+        <h2 className="text-sm font-semibold uppercase text-gray-500">
           Testimonials
         </h2>
-        <h1 className="text-4xl font-bold text-center mb-6">
-          What My Clients Say
-        </h1>
-        <p className="text-center mb-6 text-gray-400">Total Reviews</p>
-        <p className="text-center mb-12 text-4xl font-bold">323</p>
-        <div className="flex justify-center space-x-4 mb-6">
-          <Button className="p-2 rounded-full">{"<"}</Button>
-          <Button className="p-2 rounded-full">{">"}</Button>
-          <Link href="/all-testimonials">
-            <Button className="px-6 py-3 rounded-lg">
-              View All Testimonials →
-            </Button>
-          </Link>
+        <h1 className="text-4xl font-bold mb-6">What My Clients Say</h1>
+        <p className="mb-6 text-gray-400">Total Reviews</p>
+        <div className="flex">
+          <p className="mb-12 text-4xl font-bold">323</p>
+          <div className="flex-end space-x-4 mb-6">
+            <Button className="p-2 rounded-full">{"<"}</Button>
+            <Button className="p-2 rounded-full">{">"}</Button>
+            <Link href="/all-testimonials">
+              <Button className="px-6 py-3 rounded-lg">
+                View All Testimonials →
+              </Button>
+            </Link>
+          </div>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
