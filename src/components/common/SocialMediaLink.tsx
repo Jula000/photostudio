@@ -1,24 +1,24 @@
+import Link from "next/link";
 import React from "react";
-import { IconType } from "react-icons";
 
 interface SocialMediaLinkProps {
   href: string;
-  icon: IconType;
-  className?: string;
+  icon: React.ComponentType;
 }
 
 const SocialMediaLink: React.FC<SocialMediaLinkProps> = ({
   href,
   icon: Icon,
-  className = "",
 }) => {
   return (
-    <a
+    <Link
       href={href}
-      className={`bg-gray-800 p-3 rounded-full hover:bg-gray-700 ${className}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-500 hover:text-white"
     >
-      <Icon className="h-3 w-3" />
-    </a>
+      <Icon />
+    </Link>
   );
 };
 

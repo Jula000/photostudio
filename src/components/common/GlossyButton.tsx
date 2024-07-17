@@ -1,15 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-interface GlossyButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
-
-const GlossyButton: React.FC<GlossyButtonProps> = ({ ...props }) => {
+const GlossyButton: React.FC = () => {
   return (
-    <button
-      {...props}
-      className="bg-button-blue px-8 py-3 rounded-full ml-3 flex items-center justify-center shadow-lg"
-    >
+    <button className="bg-button-blue px-8 py-3 rounded-full ml-3 flex items-center justify-center shadow-lg">
       <Image
         src="/hero-btn.svg"
         alt="Icon"
