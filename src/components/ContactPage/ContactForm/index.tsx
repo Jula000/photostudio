@@ -1,6 +1,7 @@
-import GlossyButton from "@/components/common/GlossyButton";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import GlossyButton from "@/components/common/GlossyButton";
+import FormInput from "@/components/common/FormInput";
 
 const ContactForm: React.FC = () => {
   return (
@@ -41,82 +42,38 @@ const ContactForm: React.FC = () => {
           <div className="justify-self-start">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    htmlFor="first-name"
-                    className="block text-sm font-medium text-gray-400"
-                  >
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="first-name"
-                    name="first-name"
-                    className="mt-1 p-3 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm text-white"
-                    placeholder="First Name"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="last-name"
-                    className="block text-sm font-medium text-gray-400"
-                  >
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="last-name"
-                    name="last-name"
-                    className="mt-1 p-3 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm text-white"
-                    placeholder="Last Name"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-400"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="mt-1 block p-3 w-full bg-gray-800 border-gray-700 rounded-md shadow-sm text-white"
-                    placeholder="Email Address"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="phone-number"
-                    className="block text-sm font-medium text-gray-400"
-                  >
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone-number"
-                    name="phone-number"
-                    className="mt-1 p-3 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm text-white"
-                    placeholder="Phone Number"
-                  />
-                </div>
+                <FormInput
+                  id="first-name"
+                  label="First Name"
+                  type="text"
+                  placeholder="First Name"
+                />
+                <FormInput
+                  id="last-name"
+                  label="Last Name"
+                  type="text"
+                  placeholder="Last Name"
+                />
+                <FormInput
+                  id="email"
+                  label="Email"
+                  type="email"
+                  placeholder="Email Address"
+                />
+                <FormInput
+                  id="phone-number"
+                  label="Phone Number"
+                  type="tel"
+                  placeholder="Phone Number"
+                />
               </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-400"
-                >
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="mt-1 p-3 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm text-white"
-                  placeholder="Message"
-                ></textarea>
-              </div>
+              <FormInput
+                id="message"
+                label="Your Message"
+                type="text"
+                placeholder="Message"
+                textarea
+              />
               <div className="flex justify-center">
                 <span className="self-center uppercase text-6xl">
                   Send Message
