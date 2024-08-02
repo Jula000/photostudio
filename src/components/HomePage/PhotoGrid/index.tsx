@@ -5,11 +5,11 @@ import photoGrid from "../../../../public/photo-grid.png";
 const PhotoGrid: React.FC = () => {
   return (
     <main className="flex container justify-center p-10 self-center">
-      <div className="relative w-full h-[500px]">
+      <div className="relative w-full h-[200px] md:h-[500px] ">
         <Image
           src={photoGrid}
           layout="fill"
-          objectFit="contain"
+          objectFit="cover"
           alt="Combined Photography"
         />
       </div>

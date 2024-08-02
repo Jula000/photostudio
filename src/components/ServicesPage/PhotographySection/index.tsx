@@ -23,7 +23,7 @@ const PhotographySection: React.FC<PhotographySectionProps> = ({
   onNext,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between w-full p-6 text-white">
+    <div className="flex flex-col md:flex-row items-center justify-between w-full px-6 text-white">
       <div className="flex-1 md:mr-6">
         <h2 className="text-3xl font-bold">{title}</h2>
         <p className="mt-4">{description}</p>

@@ -20,6 +20,18 @@ const projects = [
     image: "/kytsya.jpg",
     link: "/product-elegance",
   },
+  {
+    title: "Product Elegance",
+    date: "January 2020",
+    image: "/kytsya.jpg",
+    link: "/product-elegance",
+  },
+  {
+    title: "A Wedding Tale",
+    date: "January 2020",
+    image: "/kytsya.jpg",
+    link: "/a-wedding-tale",
+  },
 ];
 
 const Portfolio: React.FC = () => {
@@ -27,7 +39,7 @@ const Portfolio: React.FC = () => {
     <div className="text-white py-12 container mx-auto">
       <div className="container mx-auto">
         <h3 className="uppercase text-base text-gray-400">Portfolio</h3>
-        <h1 className=" text-4xl font-bold mb-12 uppercase border-b border-gray-700 pb-5">
+        <h1 className=" text-4xl font-bold mb-12 uppercase border-b border-gray-600 pb-5">
           Explore My Photography Work
         </h1>
       </div>

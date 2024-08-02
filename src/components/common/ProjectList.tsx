@@ -21,22 +21,28 @@ const ProjectList: React.FC<Props> = ({ projects }) => (
         <Button className="px-6 py-3 rounded-lg">View All Works →</Button>
       </Link>
     </div>
-    <div className="grid md:grid-cols-3 gap-6">
+    <div className="flex overflow-hidden gap-6">
       {projects?.map((project, index) => (
-        <div key={index} className="flex flex-col items-center">
+        <div
+          key={index}
+          className="flex-shrink-0 flex flex-col w-[100%] lg:w-[calc(33.333%-1rem)] sm:w-[100%]"
+        >
           <Link href={project.link}>
-            <div
-              className="group h-96 bg-cover bg-center rounded-lg overflow-hidden"
-              style={{ backgroundImage: `url(${project.image})` }}
-            />
+            <div className="project-image-container">
+              <img
+                className="project-image"
+                src={project.image}
+                alt={project.title}
+              />
+            </div>
           </Link>
-          <div className="mt-4 flex justify-between w-full">
+          <div className="mt-4 flex justify-between">
             <div className="flex flex-col">
               <h2 className="text-xl font-semibold">{project.title}</h2>
               <p className="text-sm text-gray-400">{project.date}</p>
             </div>
             <Link href={project.link}>
-              <div className="mt-2 text-sm font-semibold text-white border-b pb-1 self-end">
+              <div className="mt-2 text-sm font-semibold text-white border-b pb-1">
                 VIEW PROJECT
               </div>
             </Link>

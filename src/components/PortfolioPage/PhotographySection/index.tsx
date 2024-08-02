@@ -12,7 +12,7 @@ const projects = {
     {
       title: "Innocence Unveiled",
       date: "January 2020",
-      image: "/public/kytsya.jpg",
+      image: "/kytsya.jpg",
       link: "/projects/innocence-unveiled",
     },
     {

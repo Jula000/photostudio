@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
   return (
     <div className="text-white flex items-center justify-center">
       <div className="container mx-auto p-6 space-y-6">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between">
           <div>
             <p className="uppercase text-base text-gray-400">About</p>
             <h1 className="text-4xl font-bold">I AM DAMIEN</h1>
@@ -44,15 +44,19 @@ const AboutSection: React.FC = () => {
                   <li className="text-sm">damienbraun@gmail.com</li>
                 </ul>
                 <ul className="mb-4 md:mb-0 md:mr-8">
-                  <p className="font-semibold">Phone Number:</p>
-                  <li className="text-sm">+00 000000000</li>
+                  <p className="font-semibold">Phone:</p>
+                  <li className="text-sm">+00000000000</li>
                 </ul>
               </div>
-              <div className="flex">
-                <SocialMediaButtons className="inline-flex border border-about-bg px-3 py-1 rounded-3xl mr-5" />
-                <div className="flex space-x-4">
-                  <Button className="text-sm">Let's Work</Button>
-                  <Button className="text-sm">Download CV</Button>
+              <div className="flex flex-col sm:flex-row justify-center sm:justify-start">
+                <SocialMediaButtons className="mb-2 sm:mb-0 mr-4" />
+                <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 space-x-0 sm:space-x-2">
+                  <Button className="text-sm px-4 py-2 rounded hover:bg-gray-700 w-full sm:w-auto">
+                    Let's Work
+                  </Button>
+                  <Button className="text-sm px-4 py-2 rounded hover:bg-gray-700 w-full sm:w-auto">
+                    Download CV
+                  </Button>
                 </div>
               </div>
             </Section>

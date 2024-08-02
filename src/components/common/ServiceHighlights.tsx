@@ -16,7 +16,7 @@ const ServiceHighlights: React.FC<ServiceHighlightsProps> = ({
       <div className="flex items-center space-x-2">
         <h2 className="text-2xl font-semibold flex items-center space-x-2">
           <span className="uppercase">{title}</span>
-          <GlossyButton />
+          <GlossyButton className="px-6 py-3" />
         </h2>
       </div>
       <p>{description}</p>
