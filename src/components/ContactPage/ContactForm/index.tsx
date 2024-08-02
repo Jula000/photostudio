@@ -78,7 +78,7 @@ const ContactForm: React.FC = () => {
                 <span className="self-center uppercase text-6xl">
                   Send Message
                 </span>
-                <GlossyButton type="submit" />
+                <GlossyButton type="submit" className="px-12" />
               </div>
             </form>
           </div>

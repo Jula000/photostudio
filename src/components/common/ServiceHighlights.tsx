@@ -1,6 +1,5 @@
 import React from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
-
+import GlossyButton from "@/components/common/GlossyButton";
 interface ServiceHighlightsProps {
   title: string;
   description: string;
@@ -17,7 +16,7 @@ const ServiceHighlights: React.FC<ServiceHighlightsProps> = ({
       <div className="flex items-center space-x-2">
         <h2 className="text-2xl font-semibold flex items-center space-x-2">
           <span className="uppercase">{title}</span>
-          <FaExternalLinkAlt className="text-blue-400" />
+          <GlossyButton className="px-6 py-3" />
         </h2>
       </div>
       <p>{description}</p>

@@ -38,7 +38,7 @@ const Journey: React.FC = () => {
     <div className="text-white py-16">
       <section className="container mx-auto px-4">
         <p className="uppercase text-base text-gray-400">Journey</p>
-        <h1 className="text-4xl font-bold mb-8">
+        <h1 className="text-4xl font-bold mb-14">
           DAMIEN'S JOURNEY - A TIMELINE
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
